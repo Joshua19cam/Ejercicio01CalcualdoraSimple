@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editNumero1"
+        android:layout_width="251dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Digita el primer numero pa"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:text="0.0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="184dp"
+        android:text="Resultado:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/editNumero2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonResta"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:text="Resta"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSuma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonSuma"
+        app:layout_constraintTop_toTopOf="@+id/buttonSuma"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSuma"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="66dp"
+        android:text="Suma"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMulti"
+        app:layout_constraintEnd_toStartOf="@+id/buttonResta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:text="División"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMulti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonMulti"
+        app:layout_constraintTop_toTopOf="@+id/buttonMulti"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonMulti"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="327dp"
+        android:text="Multiplicacion"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDiv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editNumero2"
+        android:layout_width="253dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:hint="Digita el segundo numero pa"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editNumero1"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="294dp"
+        android:layout_height="279dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDiv"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/catito"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
